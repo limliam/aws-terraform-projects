@@ -49,3 +49,37 @@ variable "ssh_location" {
   description = "the ip address that can ssh into the ec2 instances"
   type = string
 }
+
+# rds variables
+
+variable "database_snapshot_identifier" {
+  default = "arn:aws:rds:us-east-1:659497191851:snapshot:snapshot-dev-rds-db"
+  description = "the database snapshot arn"
+  type = string
+}
+
+variable "database_instance_class" {
+  default = "db.t2.micro"
+  description = "the database instance type"
+  type = string
+}
+
+variable "database_instance_identifier" {
+  default = "dev-rds-db"
+  description = "the database instance identifier"
+  type = string
+}
+
+variable "multi-az-deployment" {
+  default = false
+  description = "create a standby db instance"
+  type = bool
+}
+
+# applicatino load balancer variables
+
+variable "ssl_certificate_arn" {
+  default = "arn:aws:acm:us-east-1:659497191851:certificate/0a085fa3-cf76-4cd3-aa17-b1ceb2f04e4f"
+  description = "ssl certificate arn"
+  type = string
+}
