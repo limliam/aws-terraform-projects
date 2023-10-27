@@ -1,7 +1,7 @@
 # terraform-projects
 This is a repository for a terraform project - deploying website in aws using Terraform
 
-# Requirement:
+# Requirement and how-to:
 
 # 1. Install Terraform https://developer.hashicorp.com/terraform/downloads?product_intent=terraform
 
@@ -52,10 +52,8 @@ Bucket name: <uniquename>-terraform-remote-state
 
 # 6. Initialize terraform. main.tf
 
-See the main.tf
-
 In VS Code, Terminal > New Terminal
-l~/Documents/terraform-projects$ terraform init
+~/Documents/terraform-projects$ terraform init
 
 # 7. Create terraform file and apply to aws.
 
@@ -65,6 +63,5 @@ l~/Documents/terraform-projects$ terraform init
 # 8. Clean up 
 
 ~/Documents/terraform-projects$ terraform destroy
-
 
 
