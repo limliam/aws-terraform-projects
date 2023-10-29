@@ -76,7 +76,7 @@ variable "multi-az-deployment" {
   type = bool
 }
 
-# applicatino load balancer variables
+# application load balancer variables
 
 variable "ssl_certificate_arn" {
   default = "arn:aws:acm:us-east-1:659497191851:certificate/0a085fa3-cf76-4cd3-aa17-b1ceb2f04e4f"
@@ -89,5 +89,31 @@ variable "ssl_certificate_arn" {
 variable "operator-email" {
   default = "liam.lim@gmail.com"
   description = "a valid email address"
+  type = string
+}
+
+# asg variables
+
+variable "launch_template_name" {
+  default = "dev-launch-template"
+  description = "name of the launch template"
+  type = string
+}
+
+variable "ec2_image_id" {
+  default = "" # There must be an image previously cteated
+  description = "id of the ami"
+  type = string
+}
+
+variable "ec2_instance_type" {
+  default = "t2.micro"
+  description = "the ec2 instance type"
+  type = string
+}
+
+variable "ec2_keypair_name" {
+  default = "myec2key"
+  description = "name of the ec2 key pair"
   type = string
 }

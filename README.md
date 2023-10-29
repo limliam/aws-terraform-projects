@@ -65,3 +65,10 @@ In VS Code, Terminal > New Terminal
 ~/Documents/terraform-projects$ terraform destroy
 
 
+# Previous projects to be done to assume following resource are currently active in aws.
+
+1. rds database snapshot. arn. 
+
+2. ssl certification. arn
+
+3. ami image. ami id.
