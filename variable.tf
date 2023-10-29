@@ -117,3 +117,18 @@ variable "ec2_keypair_name" {
   description = "name of the ec2 key pair"
   type = string
 }
+
+# route 53 variables
+
+variable "domain_name" {
+  default = "liam-project.click"
+  description = "name of the domain"
+  type = string
+}
+
+
+variable "record_name" {
+  default = "www" 
+  description = "sub domain name"
+  type = string
+}
