@@ -126,9 +126,8 @@ variable "domain_name" {
   type = string
 }
 
-
 variable "record_name" {
-  default = "www" 
+  default = "www"
   description = "sub domain name"
   type = string
 }
